@@ -1,7 +1,7 @@
 {
   "name": "Home Assistant Add-ons",
   "url": "https://github.com/EspenT/home-assistant-addons",
-  "maintainer": "Espen Throndsen",
+  "maintainer": "Espen Thronedsen",
   "addons": [
     {
       "name": "Homely MQTT",
@@ -11,10 +11,21 @@
       "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
       "startup": "services",
       "boot": "auto",
-      "options": {},
-      "schema": {},
-      "image": "homely_mqtt"
+      "options": {
+        "MQTT_PASSWORD": "",
+        "MQTT_HOST": "",
+        "MQTT_USER": "",
+        "HOMELY_PASSWORD": "",
+        "HOMELY_USER": ""
+      },
+      "schema": {
+        "MQTT_PASSWORD": "str",
+        "MQTT_HOST": "str",
+        "MQTT_USER": "str",
+        "HOMELY_PASSWORD": "str",
+        "HOMELY_USER": "str"
+      },
+      "map": ["config:rw", "ssl", "share:rw", "addons:rw", "backup:rw"]
     }
   ]
 }
-
