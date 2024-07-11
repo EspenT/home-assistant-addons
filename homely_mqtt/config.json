@@ -1,0 +1,29 @@
+{
+  "name": "Homely MQTT",
+  "version": "1.0",
+  "slug": "homely_mqtt",
+  "description": "Homely MQTT add-on for Home Assistant",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "services",
+  "boot": "auto",
+  "ports": {
+    "1883/tcp": 1883
+  },
+  "options": {
+    "MQTT_PASSWORD": "",
+    "MQTT_HOST": "",
+    "MQTT_USER": "",
+    "HOMELY_PASSWORD": "",
+    "HOMELY_USER": ""
+  },
+  "schema": {
+    "MQTT_PASSWORD": "str",
+    "MQTT_HOST": "str",
+    "MQTT_USER": "str",
+    "HOMELY_PASSWORD": "str",
+    "HOMELY_USER": "str"
+  },
+  "map": ["config:rw", "ssl", "share:rw", "addons:rw", "backup:rw"],
+  "image": "local/homely_mqtt"
+}
+
