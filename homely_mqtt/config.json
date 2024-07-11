@@ -23,7 +23,5 @@
     "HOMELY_PASSWORD": "str",
     "HOMELY_USER": "str"
   },
-  "map": ["config:rw", "ssl", "share:rw", "addons:rw", "backup:rw"],
-  "image": "local/homely_mqtt"
+  "map": ["config:rw", "ssl", "share:rw", "addons:rw", "backup:rw"]
 }
-
