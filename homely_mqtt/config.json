@@ -11,14 +11,18 @@
     "MQTT_HOST": "",
     "MQTT_USER": "",
     "HOMELY_PASSWORD": "",
-    "HOMELY_USER": ""
+    "HOMELY_USER": "",
+    "DB_USERNAME": "",
+    "DB_PASSWORD": ""
   },
   "schema": {
     "MQTT_PASSWORD": "str",
     "MQTT_HOST": "str",
     "MQTT_USER": "str",
     "HOMELY_PASSWORD": "str",
-    "HOMELY_USER": "str"
+    "HOMELY_USER": "str",
+    "DB_USERNAME": "str",
+    "DB_PASSWORD": "str"
   },
   "map": ["config:rw", "ssl", "share:rw", "addons:rw", "backup:rw"]
 }
