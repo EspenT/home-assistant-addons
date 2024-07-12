@@ -1,0 +1,22 @@
+database:
+  logLevel: debug
+  connection:
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    storage: ./__data/db.sqlite
+    host: localhost
+    dialect: sqlite
+
+mqtt:
+  enabled: true
+  qos: 1
+  host: ${MQTT_HOST}
+  user: ${MQTT_USER}
+
+homely:
+  host: sdk.iotiliti.cloud
+
+logLevel: info
+
+polling:
+  schedule: "*/5 * * * *"
